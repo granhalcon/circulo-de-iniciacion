@@ -1,19 +1,60 @@
-# The URL the site will be built for
+# Sitio
 base_url = "https://circulo.pages.dev/circulo-de-iniciacion"
 title = "Círculo de Iniciación"
-description = "..."
+description = "Las 22 Lecciones del Círculo de Iniciación a la Cultura Gnóstica y las Medicinas Ancestrales"
 default_language = "es"
+author = "Gran Halcón"
 
-# Whether to automatically compile all Sass files in the sass directory
+# Compilación
 compile_sass = true
-
-# Whether to build a search index to be used later on by a JavaScript library
-build_search_index = false
+minify_html = true
+build_search_index = true
+generate_sitemap = true
+generate_robots_txt = true
 
 [markdown]
+insert_anchor_links = "right"
+lazy_async_image = true
+definition_list = true
+bottom_footnotes = true
 
 [markdown.highlighting]
 theme = "catppuccin-mocha"
 
+[search]
+include_title = true
+include_description = true
+include_date = true
+include_path = true
+include_content = true
+index_format = "fuse_json"
+
 [extra]
-# Put all your custom variables here
+footer_description = "Enseñanzas gnósticas para los primeros pasos en el camino."
+footer_author = "Gran Halcón"
+copyright_year = 2026
+navigation = [
+  { name = "Círculo", url = "https://circulo.pages.dev/" },
+  { name = "Círculo de Iniciación", url = "https://circulo.pages.dev/circulo-de-iniciacion/", active = true },
+  { name = "Biblioteca", url = "https://circulo.pages.dev/biblioteca-de-consulta-saw/" },
+  { name = "Quinto Evangelio", url = "https://circulo.pages.dev/quinto-evangelio/" },
+  { name = "Primeras Letras", url = "https://circulo.pages.dev/primeras-letras/" },
+  { name = "Pintas Ayahuasqueras", url = "https://circulo.pages.dev/pintas-ayahuasqueras/" },
+  { name = "Círculos de Medicina", url = "https://circulo.pages.dev/circulos-de-medicina/" },
+]
+
+[extra.site]
+name = "Círculo de Iniciación"
+short_name = "Iniciación"
+locale = "es_MX"
+canonical_url = "https://circulo.pages.dev/circulo-de-iniciacion/"
+
+[extra.publisher]
+name = "Círculo de Cultura Gnóstica y Medicinas Ancestrales"
+url = "https://circulo.pages.dev/"
+
+[extra.search]
+enabled = true
+scope = "local-and-global"
+source = "circulo-de-iniciacion"
+include_in_global_index = true
