@@ -1,5 +1,8 @@
 # The URL the site will be built for
-base_url = "https://example.com"
+base_url = "https://circulo.pages.dev/circulo-de-iniciacion"
+title = "Círculo de Iniciación"
+description = "..."
+default_language = "es"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
