@@ -1,5 +1,6 @@
 # Sitio
 base_url = "https://circulo.pages.dev/circulo-de-iniciacion"
+theme = "enso"
 title = "Círculo de Iniciación"
 description = "Las 22 Lecciones del Círculo de Iniciación a la Cultura Gnóstica y las Medicinas Ancestrales"
 default_language = "es"
